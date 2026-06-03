@@ -1,0 +1,16 @@
+{
+  "name": "kotlin-chess",
+  "image": "gradle:jdk21",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": ["fwcd.kotlin", "vscjava.vscode-java-pack"],
+      "settings": {
+        "java.jdt.ls.java.home": "/opt/java/openjdk",
+        "kotlin.java.home": "/opt/java/openjdk"
+      }
+    }
+  },
+  "postCreateCommand": "./gradlew --version"
+}
